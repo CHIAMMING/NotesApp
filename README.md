@@ -10,14 +10,14 @@ Hey there! 👋 This is a React Native notes app for you to create notes, organi
 - yarn: v1.22.19
 
 **Mobile Development:**
-- React Native: v0.72.6
-- iOS: Xcode 15.0
-- Android: Android Studio Hedgehog | 2023.1.1
+- React Native: v0.78.1
+- iOS: Xcode 15.3
+- Android: Android Studio Meerkat | 2024.3.1 Patch 1
 - Android SDK: 33 (Android 13)
 
 **Key Dependencies:**
-- React: v18.2.0
-- React Navigation: v6.1.9
+- React: v19.0.0
+- React Navigation: v7.0.19
 - TypeScript: v5.0.4
 
 **Required tools:**
