@@ -1,97 +1,91 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Notes App 📝
 
-# Getting Started
+Hey there! 👋 This is a React Native notes app for you to create notes, organize them, and view summaries.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Getting Started 🚀
+### Environment & SDK Versions 🛠️
+**Runtime Environment:**
+- Node.js: v18.17.0
+- npm: v9.6.7
+- yarn: v1.22.19
 
-## Step 1: Start Metro
+**Mobile Development:**
+- React Native: v0.72.6
+- iOS: Xcode 15.0
+- Android: Android Studio Hedgehog | 2023.1.1
+- Android SDK: 33 (Android 13)
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+**Key Dependencies:**
+- React: v18.2.0
+- React Navigation: v6.1.9
+- TypeScript: v5.0.4
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+**Required tools:**
+- Node.js (v14+)
+- npm or yarn
+- Xcode (for iOS)
+- Android Studio (for Android)
+- Git
 
+### How to Run It
+
+1. Clone this repo:
 ```sh
-# Using npm
-npm start
+git clone https://github.com/CHIAMMING/NotesApp.git
+cd NotesApp
+```
 
-# OR using Yarn
+2. Install the dependencies:
+```sh
+npm install
+# or
+yarn install
+```
+
+3. Start the dev server:
+```sh
+npm start
+# or
 yarn start
 ```
 
-## Step 2: Build and run your app
+4. Run it on your device/simulator:
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
+For Android:
 ```sh
-# Using npm
 npm run android
-
-# OR using Yarn
+# or
 yarn android
 ```
 
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
+For iOS (you'll need to do this first time):
 ```sh
 bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
 bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
 npm run ios
-
-# OR using Yarn
+# or
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## What Can It Do? 🤔
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+- Create and edit notes
+- Organize notes by category
+- See summaries of your notes
+- Works on both iOS and Android
 
-## Step 3: Modify your app
+## Project Structure 📁
 
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Here's how the code is organized:
+```
+NotesApp/
+├── src/
+│   ├── assets/      # All the images and icons
+│   ├── components/  # Components used in the pages
+│   ├── navigation/  # How the app moves around
+│   ├── screens/     # The main screens
+│   ├── types/       # TypeScript stuff
+│   └── utils/       # Helper functions
+├── ios/            # iOS specific stuff
+└── android/        # Android specific stuff
+```
