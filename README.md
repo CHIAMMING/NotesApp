@@ -61,7 +61,8 @@ yarn android
 For iOS (you'll need to do this first time):
 ```sh
 bundle install
-bundle exec pod install
+cd ios
+pod install
 npm run ios
 # or
 yarn ios
